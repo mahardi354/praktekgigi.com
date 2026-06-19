@@ -20,12 +20,12 @@
   --primary:#0E7490;--primary-dk:#164E63;--primary-lt:#ECFEFF;
   --accent:#0891B2;--accent2:#06B6D4;
   --green:#10B981;--green-lt:#D1FAE5;
-  --dark:#0F172A;--dark2:#1E293B;--gray:#475569;--lgray:#94A3B8;
+  --dark:#0F172A;--dark2:#1E293B;--gray:#475569;--lgray:#64748B;
   --border:#E2E8F0;--bg:#F0FDFF;--white:#FFFFFF;
   --radius:12px;--radius-lg:20px;
   --shadow:0 4px 24px rgba(14,116,144,.10);
   --shadow-lg:0 8px 40px rgba(14,116,144,.18);
-  --wa:#25D366;--wa-dk:#128C7E;
+  --wa:#0F7D3D;--wa-dk:#0B5C2D;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;overflow-x:hidden}
@@ -56,7 +56,7 @@ img{max-width:100%;height:auto;display:block}
 .logo-icon{width:36px;height:36px;background:var(--primary);color:#fff;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
 .header-cta{background:var(--primary);color:#fff;padding:10px 20px;border-radius:var(--radius);font-weight:700;font-size:.88rem;display:flex;align-items:center;gap:8px;transition:.2s}
 .header-cta:hover{background:var(--primary-dk)}
-.breadcrumb{padding:12px 0;font-size:.82rem;color:var(--lgray)}.breadcrumb a{color:var(--primary)}.breadcrumb span{margin:0 6px}
+.breadcrumb{padding:12px 0;font-size:.82rem;color:var(--lgray)}.breadcrumb a{color:var(--primary);text-decoration:underline}.breadcrumb span{margin:0 6px}
 /* HERO */
 #hero{background:linear-gradient(135deg,#164E63 0%,#0E7490 55%,#0891B2 100%);color:#fff;padding:80px 0 72px;position:relative;overflow:hidden}
 #hero::before{content:"";position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23fff' fill-opacity='0.04'%3E%3Ccircle cx='40' cy='40' r='30'/%3E%3Ccircle cx='40' cy='40' r='18'/%3E%3C/g%3E%3C/svg%3E")}
@@ -172,9 +172,9 @@ img{max-width:100%;height:auto;display:block}
 footer{background:var(--dark);color:rgba(255,255,255,.7);padding:40px 0 22px}
 .footer-inner{display:grid;grid-template-columns:2fr 1fr 1fr;gap:28px;margin-bottom:28px}
 .footer-brand p{font-size:.83rem;margin-top:10px}
-footer h4{color:#fff;font-size:.9rem;margin-bottom:10px}
+footer h3{color:#fff;font-size:.9rem;margin-bottom:10px}
 footer ul{list-style:none;display:flex;flex-direction:column;gap:7px}
-footer ul li a{font-size:.82rem;color:rgba(255,255,255,.6);transition:.2s}
+footer ul li a{font-size:.82rem;color:rgba(255,255,255,.6);transition:.2s;text-decoration:underline;text-decoration-color:rgba(255,255,255,.25)}
 footer ul li a:hover{color:#fff}
 .footer-copy{border-top:1px solid rgba(255,255,255,.1);padding-top:18px;text-align:center;font-size:.78rem}
 /* RESPONSIVE */
@@ -207,8 +207,9 @@ footer ul li a:hover{color:#fff}
 </head><body>
 <header id="site-header"><div class="container"><div class="header-inner">
   <a href="https://praktekgigi.com" class="logo"><div class="logo-icon">🦷</div>Praktek Gigi</a>
-  <a href="https://wa.me/6285137396984?text=Halo%20Praktek%20Gigi%2C%20saya%20ingin%20buat%20janji%20temu%20dokter%20gigi%20di%20Kutai%20Kartanegara" target="_blank" rel="noopener" class="header-cta"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.552 4.116 1.52 5.849L.057 23.881a.5.5 0 00.611.611l6.032-1.463A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.948 0-3.773-.527-5.335-1.444l-.381-.228-3.949.958.977-3.83-.25-.397A9.961 9.961 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Buat Janji</a>
+  <a href="https://wa.me/6285137396984?text=Halo%20Praktek%20Gigi%2C%20saya%20ingin%20buat%20janji%20temu%20dokter%20gigi%20di%20Kutai%20Kartanegara" target="_blank" rel="noopener" class="header-cta" aria-label="Hubungi Praktek Gigi via WhatsApp"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.552 4.116 1.52 5.849L.057 23.881a.5.5 0 00.611.611l6.032-1.463A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.948 0-3.773-.527-5.335-1.444l-.381-.228-3.949.958.977-3.83-.25-.397A9.961 9.961 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Buat Janji</a>
 </div></div></header>
+<main>
 <section id="hero" style="padding:60px 0 52px">
   <div class="container" style="text-align:center;position:relative">
     <div class="badge" style="margin:0 auto 14px">📍 Kutai Kartanegara</div>
@@ -380,11 +381,12 @@ footer ul li a:hover{color:#fff}
     <div class="cta-buttons"><a href="https://wa.me/6285137396984?text=Halo%20Praktek%20Gigi%2C%20saya%20ingin%20buat%20janji%20temu%20dokter%20gigi%20di%20Kutai%20Kartanegara" target="_blank" rel="noopener" class="btn-cta-wa"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.552 4.116 1.52 5.849L.057 23.881a.5.5 0 00.611.611l6.032-1.463A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.948 0-3.773-.527-5.335-1.444l-.381-.228-3.949.958.977-3.83-.25-.397A9.961 9.961 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Buat Janji Temu</a></div>
   </div>
 </section>
+</main>
 <footer><div class="container">
   <div class="footer-inner">
     <div class="footer-brand"><div class="logo" style="color:#fff"><div class="logo-icon">🦷</div>Praktek Gigi</div><p>Dokter gigi terpercaya se-Kutai Kartanegara. drg. Andi Pratama. Tambal, scaling, behel, bleaching. Sejak 2016.</p></div>
-    <div><h4>Kecamatan</h4><ul><li><a href="https://praktekgigi.com/dokter-gigi-anggana-kutai-kartanegara.html">Anggana</a></li><li><a href="https://praktekgigi.com/dokter-gigi-kembang-janggut-kutai-kartanegara.html">Kembang Janggut</a></li><li><a href="https://praktekgigi.com/dokter-gigi-kenohan-kutai-kartanegara.html">Kenohan</a></li><li><a href="https://praktekgigi.com/dokter-gigi-kota-bangun-kutai-kartanegara.html">Kota Bangun</a></li><li><a href="https://praktekgigi.com/dokter-gigi-loa-janan-kutai-kartanegara.html">Loa Janan</a></li><li><a href="https://praktekgigi.com/dokter-gigi-loa-kulu-kutai-kartanegara.html">Loa Kulu</a></li></ul></div>
-    <div><h4>Layanan</h4><ul><li><a href="https://wa.me/6285137396984?text=Halo%20Praktek%20Gigi%2C%20saya%20ingin%20buat%20janji%20temu%20dokter%20gigi%20di%20Kutai%20Kartanegara">Tambal Gigi</a></li><li><a href="https://wa.me/6285137396984?text=Halo%20Praktek%20Gigi%2C%20saya%20ingin%20buat%20janji%20temu%20dokter%20gigi%20di%20Kutai%20Kartanegara">Scaling Karang Gigi</a></li><li><a href="https://wa.me/6285137396984?text=Halo%20Praktek%20Gigi%2C%20saya%20ingin%20buat%20janji%20temu%20dokter%20gigi%20di%20Kutai%20Kartanegara">Behel Gigi</a></li><li><a href="https://wa.me/6285137396984?text=Halo%20Praktek%20Gigi%2C%20saya%20ingin%20buat%20janji%20temu%20dokter%20gigi%20di%20Kutai%20Kartanegara">Bleaching Gigi</a></li></ul></div>
+    <div><h3>Kecamatan</h3><ul><li><a href="https://praktekgigi.com/dokter-gigi-anggana-kutai-kartanegara.html">Anggana</a></li><li><a href="https://praktekgigi.com/dokter-gigi-kembang-janggut-kutai-kartanegara.html">Kembang Janggut</a></li><li><a href="https://praktekgigi.com/dokter-gigi-kenohan-kutai-kartanegara.html">Kenohan</a></li><li><a href="https://praktekgigi.com/dokter-gigi-kota-bangun-kutai-kartanegara.html">Kota Bangun</a></li><li><a href="https://praktekgigi.com/dokter-gigi-loa-janan-kutai-kartanegara.html">Loa Janan</a></li><li><a href="https://praktekgigi.com/dokter-gigi-loa-kulu-kutai-kartanegara.html">Loa Kulu</a></li></ul></div>
+    <div><h3>Layanan</h3><ul><li><a href="https://wa.me/6285137396984?text=Halo%20Praktek%20Gigi%2C%20saya%20ingin%20buat%20janji%20temu%20dokter%20gigi%20di%20Kutai%20Kartanegara">Tambal Gigi</a></li><li><a href="https://wa.me/6285137396984?text=Halo%20Praktek%20Gigi%2C%20saya%20ingin%20buat%20janji%20temu%20dokter%20gigi%20di%20Kutai%20Kartanegara">Scaling Karang Gigi</a></li><li><a href="https://wa.me/6285137396984?text=Halo%20Praktek%20Gigi%2C%20saya%20ingin%20buat%20janji%20temu%20dokter%20gigi%20di%20Kutai%20Kartanegara">Behel Gigi</a></li><li><a href="https://wa.me/6285137396984?text=Halo%20Praktek%20Gigi%2C%20saya%20ingin%20buat%20janji%20temu%20dokter%20gigi%20di%20Kutai%20Kartanegara">Bleaching Gigi</a></li></ul></div>
   </div>
   <div class="footer-copy"><p>© 2026 Praktek Gigi · Dokter Gigi Kutai Kartanegara · drg. Andi Pratama</p></div>
 </div></footer>
