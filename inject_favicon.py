@@ -5,7 +5,7 @@ inject_favicon.py — Sisipkan favicon emoji ke semua file HTML WebVolt
 Cara pakai:
   python3 inject_favicon.py                    # dry-run, lihat preview saja
   python3 inject_favicon.py --write            # eksekusi update semua file
-  python3 inject_favicon.py --write --emoji 🔥 # pakai emoji lain
+  python3 inject_favicon.py --write --emoji 🦷 # pakai emoji lain
 
 Strategi:
   - Pakai SVG inline via data URI — tidak butuh file .ico/.png
