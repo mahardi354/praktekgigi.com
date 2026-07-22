@@ -211,8 +211,13 @@ footer ul li a:hover{color:#fff}
   .btn-lg{width:100%;justify-content:center}
   .cta-buttons{flex-direction:column;align-items:center}
 }
+
+/* === Price Disclaimer (shared) === */
+.price-note{font-size:.78rem;font-style:italic;color:var(--lgray);margin-top:8px;line-height:1.4}
+.pricelist-disclaimer{display:flex;align-items:flex-start;gap:8px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:12px 16px;margin-bottom:20px;font-size:.85rem;line-height:1.5;color:var(--gray)}
+.pricelist-disclaimer::before{content:"ℹ️";flex-shrink:0;font-size:.9rem}
+@media(max-width:480px){.pricelist-disclaimer{font-size:.8rem;padding:10px 12px}.price-note{font-size:.75rem}}
 </style>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🦷%3C/text%3E%3C/svg%3E">
 </head>
 <body>
 <header id="site-header">
@@ -242,7 +247,7 @@ footer ul li a:hover{color:#fff}
       <div>
         <p class="hero-label">Dokter Gigi di Gondang, Mojokerto</p>
         <h1 class="hero-title">Dokter Gigi <span class="hl">Gondang</span> Mojokerto – Mulai Rp 50.000</h1>
-        <p class="hero-sub">Klinik gigi modern di Gondang, Mojokerto. Peralatan steril dan canggih, dokter gigi berpengalaman, nyaman untuk anak dan dewasa. Hubungi kami untuk janji temu.</p>
+        <p class="hero-sub">Percayakan kesehatan gigi keluarga kepada Praktek Gigi di Gondang. Berpengalaman 10 tahun, ribuan pasien puas, peralatan modern, dan harga terjangkau.</p>
         <div class="hero-cta-group">
           <a href="https://wa.me/6285137396984?text=Halo%2C%20saya%20ingin%20buat%20janji%20temu%20dengan%20dokter%20gigi%20di%20Gondang" target="_blank" rel="noopener" class="btn btn-wa btn-lg"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.552 4.116 1.52 5.849L.057 23.881a.5.5 0 00.611.611l6.032-1.463A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.948 0-3.773-.527-5.335-1.444l-.381-.228-3.949.958.977-3.83-.25-.397A9.961 9.961 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Buat Janji Sekarang</a>
           <a href="#layanan" class="btn btn-outline">Lihat Layanan ↓</a>
@@ -288,9 +293,9 @@ footer ul li a:hover{color:#fff}
     <div class="unique-intro-wrap">
       <div class="unique-intro-icon">🦷</div>
       <div>
-        <h2 class="unique-intro-title">Perawatan Gigi Tanpa Rasa Takut di Gondang</h2>
-        <p class="unique-intro-text">Dental anxiety atau rasa takut ke dokter gigi adalah hal yang sangat umum dan bisa diatasi. Di praktek Praktek Gigi di Gondang, dr. Andi Pratama terlatih untuk menangani pasien yang cemas dengan teknik komunikasi yang menenangkan, penjelasan langkah demi langkah sebelum tindakan, dan kemampuan untuk berhenti kapanpun pasien membutuhkan istirahat.</p>
-        <p class="unique-intro-text" style="margin-top:10px">Untuk kasus rasa takut yang lebih besar, Praktek Gigi di Gondang menyediakan anestesi lokal yang bekerja efektif sehingga pasien tidak merasakan rasa sakit selama tindakan. Kami percaya bahwa pengalaman perawatan gigi yang positif akan membuat pasien lebih rutin menjaga kesehatan giginya di masa depan.</p>
+        <h2 class="unique-intro-title">Praktek Dokter Gigi Terpercaya di Gondang, Mojokerto</h2>
+        <p class="unique-intro-text">Kesehatan gigi adalah bagian penting dari kesehatan tubuh secara keseluruhan. Namun, masih banyak warga Gondang yang menunda periksa gigi karena takut, tidak tahu biayanya, atau merasa belum ada masalah serius. Padahal, pemeriksaan gigi rutin setiap 6 bulan sekali bisa mencegah banyak masalah besar di kemudian hari — dari gigi berlubang yang menyebar, infeksi yang bisa berbahaya, hingga kehilangan gigi permanen.</p>
+        <p class="unique-intro-text" style="margin-top:10px">Praktek Praktek Gigi hadir di Gondang sejak 2016 untuk memberikan layanan kesehatan gigi yang nyaman, terpercaya, dan terjangkau. Di bawah penanganan dr. Andi Pratama, setiap pasien mendapatkan pemeriksaan menyeluruh, diagnosis yang akurat, dan rencana perawatan yang jelas dengan estimasi biaya yang transparan sebelum tindakan dimulai. Kami berkomitmen agar kunjungan ke dokter gigi di Gondang menjadi pengalaman yang nyaman, bukan sesuatu yang ditakuti.</p>
       </div>
     </div>
   </div>
@@ -360,7 +365,7 @@ footer ul li a:hover{color:#fff}
   <div class="container">
     <div class="section-head">
       <div class="badge">🏆 Keunggulan</div>
-      <h2>Keunggulan Praktek Gigi sebagai Klinik Gigi Pilihan di Gondang</h2>
+      <h2>Yang Membedakan Praktek Praktek Gigi dari Klinik Gigi Lain di Gondang</h2>
       <p>Standar pelayanan yang kami jaga agar setiap kunjungan ke dokter gigi menjadi pengalaman yang nyaman dan hasil yang optimal.</p>
     </div>
     <div class="why-grid"><div class="why-card"><div class="why-num">01</div><h3>Berpengalaman 10+ Tahun</h3><p>drg. Andi Pratama telah berpraktik di Mojokerto sejak 2016 dengan ribuan pasien yang ditangani. Rekam jejak yang bisa diverifikasi.</p></div><div class="why-card"><div class="why-num">02</div><h3>Peralatan Modern & Steril</h3><p>Dental unit ergonomis, X-ray digital minim radiasi, autoclave sterilisasi standar WHO, dan instrumen disposable untuk keamanan maksimal.</p></div><div class="why-card"><div class="why-num">03</div><h3>Nyaman untuk Anak & Dewasa</h3><p>Pendekatan yang lembut dan komunikatif untuk mengurangi rasa takut. Khususnya untuk pasien anak-anak, kami punya teknik yang menyenangkan.</p></div><div class="why-card"><div class="why-num">04</div><h3>Transparansi Biaya Penuh</h3><p>Estimasi biaya diberikan sebelum tindakan dimulai. Tidak ada biaya tersembunyi. Setiap item perawatan dijelaskan secara rinci.</p></div><div class="why-card"><div class="why-num">05</div><h3>Lokasi Mudah Dijangkau</h3><p>Berlokasi strategis di Gondang dengan jadwal yang fleksibel, termasuk sore hari dan akhir pekan. Mudah diakses oleh warga Gondang dan sekitarnya.</p></div><div class="why-card"><div class="why-num">06</div><h3>Material Berkualitas Tinggi</h3><p>Hanya menggunakan material tambal, crown, dan behel dari merek terpercaya yang sudah teruji klinis untuk hasil perawatan yang optimal dan tahan lama.</p></div></div>
@@ -370,7 +375,7 @@ footer ul li a:hover{color:#fff}
   <div class="container">
     <div class="section-head">
       <div class="badge badge-green">🌿 Tips Kesehatan</div>
-      <h2>Kenali Masalah Gigi Umum dan Solusinya di Gondang</h2>
+      <h2>Kapan Harus ke Dokter Gigi? Panduan untuk Warga Gondang</h2>
       <p>Panduan praktis menjaga kesehatan gigi sehari-hari dari drg. Andi Pratama untuk warga Gondang.</p>
     </div>
     <div class="tips-grid">
@@ -413,6 +418,7 @@ footer ul li a:hover{color:#fff}
       <h2>Daftar Harga Layanan Dokter Gigi di Gondang</h2>
       <p>Estimasi harga, dapat bervariasi tergantung kondisi gigi. Konsultasi awal gratis untuk rencana perawatan yang lebih besar.</p>
     </div>
+    <div class="pricelist-disclaimer">Harga di atas adalah acuan awal (harga mulai). Harga final ditentukan setelah pemeriksaan langsung oleh dokter, sesuai kondisi gigi masing-masing pasien.</div>
     <div style="overflow-x:auto;margin-top:24px">
       <table class="pricing-table">
         <thead><tr><th>Jenis Perawatan</th><th>Harga Mulai</th><th>Keterangan</th></tr></thead>
@@ -451,7 +457,7 @@ footer ul li a:hover{color:#fff}
         <p class="testi-text">"Saya sudah lama takut ke dokter gigi, tapi drg. Andi Pratama sangat sabar dan menenangkan. Scaling pertama saya di Gondang berjalan lancar dan tidak sesakit yang saya bayangkan. Hasilnya gigi saya bersih sekali!"</p>
         <div class="testi-author">
           <div class="testi-avatar"> </div>
-          <div><div class="testi-name">Ibu Sari Dewi</div><div class="testi-meta">Bakalan, Gondang · September 2024</div></div>
+          <div><div class="testi-name">Ibu Sari Dewi</div><div class="testi-meta">Bakalan, Gondang · Juni 2024</div></div>
         </div>
       </div>
       <div class="testi-card">
@@ -459,7 +465,7 @@ footer ul li a:hover{color:#fff}
         <p class="testi-text">"Gigi geraham saya berlubang parah dan sudah sakit berhari-hari. Langsung ke praktek Praktek Gigi di Gondang, ditangani cepat dan profesional. PSA-nya berhasil menyelamatkan gigi saya. Sangat bersyukur."</p>
         <div class="testi-author">
           <div class="testi-avatar"> </div>
-          <div><div class="testi-name">Pak Hendra W.</div><div class="testi-meta">Centong, Gondang · Oktober 2024</div></div>
+          <div><div class="testi-name">Pak Hendra W.</div><div class="testi-meta">Centong, Gondang · Juli 2024</div></div>
         </div>
       </div>
       <div class="testi-card">
@@ -467,7 +473,7 @@ footer ul li a:hover{color:#fff}
         <p class="testi-text">"Pasang behel di Praktek Gigi sangat recommended. drg. Andi Pratama menjelaskan proses dan estimasi waktu dengan detail. Kontrol rutin selalu tepat waktu dan perkembangan gigi saya memuaskan. Pelayanan terbaik di Gondang."</p>
         <div class="testi-author">
           <div class="testi-avatar"> </div>
-          <div><div class="testi-name">Ibu Nurul F.</div><div class="testi-meta">Gondang, Gondang · November 2024</div></div>
+          <div><div class="testi-name">Ibu Nurul F.</div><div class="testi-meta">Gondang, Gondang · Agustus 2024</div></div>
         </div>
       </div>
       <div class="testi-card">
@@ -475,7 +481,7 @@ footer ul li a:hover{color:#fff}
         <p class="testi-text">"Anak saya yang 6 tahun awalnya sangat takut dokter gigi. Tapi drg. Andi Pratama sangat sabar dan pandai mengambil hati anak kecil. Sekarang anak saya sudah tidak takut lagi dan giginya terjaga dengan baik."</p>
         <div class="testi-author">
           <div class="testi-avatar">a</div>
-          <div><div class="testi-name">Bapak Agus S.</div><div class="testi-meta">Gumeng, Gondang · Desember 2024</div></div>
+          <div><div class="testi-name">Bapak Agus S.</div><div class="testi-meta">Gumeng, Gondang · September 2024</div></div>
         </div>
       </div>
       <div class="testi-card">
@@ -483,7 +489,7 @@ footer ul li a:hover{color:#fff}
         <p class="testi-text">"Bleaching di Praktek Gigi hasilnya luar biasa! Gigi saya yang kusam karena kopi berubah putih dalam satu sesi. Prosedurnya nyaman dan drg. Andi Pratama menjelaskan cara menjaga hasilnya. Worth every penny!"</p>
         <div class="testi-author">
           <div class="testi-avatar"> </div>
-          <div><div class="testi-name">Ibu Rina P.</div><div class="testi-meta">Begaganlimo, Gondang · Januari 2025</div></div>
+          <div><div class="testi-name">Ibu Rina P.</div><div class="testi-meta">Begaganlimo, Gondang · Oktober 2024</div></div>
         </div>
       </div>
       <div class="testi-card">
@@ -491,7 +497,7 @@ footer ul li a:hover{color:#fff}
         <p class="testi-text">"Crown gigi saya yang patah dipasang di Praktek Gigi di Gondang. Materialnya bagus, warnanya sangat mirip gigi asli. Setelah beberapa bulan masih terasa nyaman dan tidak ada masalah. Sangat puas dengan hasilnya."</p>
         <div class="testi-author">
           <div class="testi-avatar"> </div>
-          <div><div class="testi-name">Pak Doni M.</div><div class="testi-meta">Kalikatir, Gondang · Februari 2025</div></div>
+          <div><div class="testi-name">Pak Doni M.</div><div class="testi-meta">Kalikatir, Gondang · November 2024</div></div>
         </div>
       </div></div>
   </div>

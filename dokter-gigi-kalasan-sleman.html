@@ -211,8 +211,13 @@ footer ul li a:hover{color:#fff}
   .btn-lg{width:100%;justify-content:center}
   .cta-buttons{flex-direction:column;align-items:center}
 }
+
+/* === Price Disclaimer (shared) === */
+.price-note{font-size:.78rem;font-style:italic;color:var(--lgray);margin-top:8px;line-height:1.4}
+.pricelist-disclaimer{display:flex;align-items:flex-start;gap:8px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:12px 16px;margin-bottom:20px;font-size:.85rem;line-height:1.5;color:var(--gray)}
+.pricelist-disclaimer::before{content:"ℹ️";flex-shrink:0;font-size:.9rem}
+@media(max-width:480px){.pricelist-disclaimer{font-size:.8rem;padding:10px 12px}.price-note{font-size:.75rem}}
 </style>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🦷%3C/text%3E%3C/svg%3E">
 </head>
 <body>
 <header id="site-header">
@@ -299,7 +304,7 @@ footer ul li a:hover{color:#fff}
   <div class="container">
     <div class="section-head">
       <div class="badge">🦷 Layanan Kami</div>
-      <h2>Apa Saja Layanan Dokter Gigi Praktek Gigi di Kalasan?</h2>
+      <h2>Jenis Perawatan Gigi yang Tersedia di Praktek Gigi, Kalasan</h2>
       <p>Dari perawatan rutin hingga estetika gigi — semua ditangani oleh drg. Andi Pratama yang berpengalaman di Kalasan.</p>
     </div>
     <div class="services-grid">
@@ -360,7 +365,7 @@ footer ul li a:hover{color:#fff}
   <div class="container">
     <div class="section-head">
       <div class="badge badge-green">🌿 Tips Kesehatan</div>
-      <h2>Kenali Masalah Gigi Umum dan Solusinya di Kalasan</h2>
+      <h2>Kapan Harus ke Dokter Gigi? Panduan untuk Warga Kalasan</h2>
       <p>Panduan praktis menjaga kesehatan gigi sehari-hari dari drg. Andi Pratama untuk warga Kalasan.</p>
     </div>
     <div class="tips-grid">
@@ -403,6 +408,7 @@ footer ul li a:hover{color:#fff}
       <h2>Daftar Harga Layanan Dokter Gigi di Kalasan</h2>
       <p>Estimasi harga, dapat bervariasi tergantung kondisi gigi. Konsultasi awal gratis untuk rencana perawatan yang lebih besar.</p>
     </div>
+    <div class="pricelist-disclaimer">Harga di atas adalah acuan awal (harga mulai). Harga final ditentukan setelah pemeriksaan langsung oleh dokter, sesuai kondisi gigi masing-masing pasien.</div>
     <div style="overflow-x:auto;margin-top:24px">
       <table class="pricing-table">
         <thead><tr><th>Jenis Perawatan</th><th>Harga Mulai</th><th>Keterangan</th></tr></thead>
@@ -550,7 +556,7 @@ footer ul li a:hover{color:#fff}
         <p class="testi-text">"Saya sudah lama takut ke dokter gigi, tapi drg. Andi Pratama sangat sabar dan menenangkan. Scaling pertama saya di Kalasan berjalan lancar dan tidak sesakit yang saya bayangkan. Hasilnya gigi saya bersih sekali!"</p>
         <div class="testi-author">
           <div class="testi-avatar"> </div>
-          <div><div class="testi-name">Ibu Sari Dewi</div><div class="testi-meta">Purwomartani, Kalasan · Oktober 2024</div></div>
+          <div><div class="testi-name">Ibu Sari Dewi</div><div class="testi-meta">Purwomartani, Kalasan · November 2024</div></div>
         </div>
       </div>
       <div class="testi-card">
@@ -558,7 +564,7 @@ footer ul li a:hover{color:#fff}
         <p class="testi-text">"Gigi geraham saya berlubang parah dan sudah sakit berhari-hari. Langsung ke praktek Praktek Gigi di Kalasan, ditangani cepat dan profesional. PSA-nya berhasil menyelamatkan gigi saya. Sangat bersyukur."</p>
         <div class="testi-author">
           <div class="testi-avatar"> </div>
-          <div><div class="testi-name">Pak Hendra W.</div><div class="testi-meta">Selomartani, Kalasan · November 2024</div></div>
+          <div><div class="testi-name">Pak Hendra W.</div><div class="testi-meta">Selomartani, Kalasan · Desember 2024</div></div>
         </div>
       </div>
       <div class="testi-card">
@@ -566,7 +572,7 @@ footer ul li a:hover{color:#fff}
         <p class="testi-text">"Pasang behel di Praktek Gigi sangat recommended. drg. Andi Pratama menjelaskan proses dan estimasi waktu dengan detail. Kontrol rutin selalu tepat waktu dan perkembangan gigi saya memuaskan. Pelayanan terbaik di Kalasan."</p>
         <div class="testi-author">
           <div class="testi-avatar"> </div>
-          <div><div class="testi-name">Ibu Nurul F.</div><div class="testi-meta">Tamanmartani, Kalasan · Desember 2024</div></div>
+          <div><div class="testi-name">Ibu Nurul F.</div><div class="testi-meta">Tamanmartani, Kalasan · Januari 2025</div></div>
         </div>
       </div>
       <div class="testi-card">
@@ -574,7 +580,7 @@ footer ul li a:hover{color:#fff}
         <p class="testi-text">"Anak saya yang 6 tahun awalnya sangat takut dokter gigi. Tapi drg. Andi Pratama sangat sabar dan pandai mengambil hati anak kecil. Sekarang anak saya sudah tidak takut lagi dan giginya terjaga dengan baik."</p>
         <div class="testi-author">
           <div class="testi-avatar">a</div>
-          <div><div class="testi-name">Bapak Agus S.</div><div class="testi-meta">Tirtomartani, Kalasan · Januari 2025</div></div>
+          <div><div class="testi-name">Bapak Agus S.</div><div class="testi-meta">Tirtomartani, Kalasan · Februari 2025</div></div>
         </div>
       </div>
       <div class="testi-card">
@@ -582,7 +588,7 @@ footer ul li a:hover{color:#fff}
         <p class="testi-text">"Bleaching di Praktek Gigi hasilnya luar biasa! Gigi saya yang kusam karena kopi berubah putih dalam satu sesi. Prosedurnya nyaman dan drg. Andi Pratama menjelaskan cara menjaga hasilnya. Worth every penny!"</p>
         <div class="testi-author">
           <div class="testi-avatar"> </div>
-          <div><div class="testi-name">Ibu Rina P.</div><div class="testi-meta">Purwomartani, Kalasan · Februari 2025</div></div>
+          <div><div class="testi-name">Ibu Rina P.</div><div class="testi-meta">Purwomartani, Kalasan · Maret 2025</div></div>
         </div>
       </div>
       <div class="testi-card">
@@ -590,7 +596,7 @@ footer ul li a:hover{color:#fff}
         <p class="testi-text">"Crown gigi saya yang patah dipasang di Praktek Gigi di Kalasan. Materialnya bagus, warnanya sangat mirip gigi asli. Setelah beberapa bulan masih terasa nyaman dan tidak ada masalah. Sangat puas dengan hasilnya."</p>
         <div class="testi-author">
           <div class="testi-avatar"> </div>
-          <div><div class="testi-name">Pak Doni M.</div><div class="testi-meta">Selomartani, Kalasan · Maret 2025</div></div>
+          <div><div class="testi-name">Pak Doni M.</div><div class="testi-meta">Selomartani, Kalasan · April 2025</div></div>
         </div>
       </div></div>
   </div>
